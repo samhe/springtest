@@ -1,0 +1,28 @@
+sam:
+  name: name-in-default-yml
+  appName: appname-in-app-default-yml
+
+
+spring:
+  datasource:
+#    url: jdbc:h2:mem:default
+    url: jdbc:h2:~/MyProjects/springtest/db;AUTO_SERVER=TRUE
+#    url: jdbc:h2:tcp://localhost/~/test
+    driverClassName: org.h2.Driver
+#    username: sa
+#    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+#
+#  flyway:
+#    baseline-on-migrate: true
+#    url: jdbc:h2:tcp://localhost/~/test
+#    schemas: test
+#    user: sa
+#    password:
